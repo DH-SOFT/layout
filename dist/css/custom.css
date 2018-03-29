@@ -1,0 +1,36 @@
+.full-width {
+  width: 100%;
+}
+.bg-gray {
+  background: #CCC;
+}
+.footer {
+	background-color: #263038;
+	color: rgba(255, 255, 255, 1);
+    border-top: 2px solid #ffee08;
+}
+.footer h4 {
+	color: #ffee08;
+}
+.footer ul a {
+	color: #ffee08;
+	text-decoration: none;
+}
+.footer ul a:hover {
+	color: #f99f1b;
+}
+.footer ul.more-info li{
+	border-bottom: 1px solid;
+    padding: 5px 0px;
+}
+.footer ul.more-info li:last-child {
+	border-bottom: 0px;
+}
+
+.mt-10 {
+	margin-top: 10px;
+}
+
+.bg-green {
+	background-color: #008fe5;
+}
