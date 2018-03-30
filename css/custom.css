@@ -1,0 +1,103 @@
+.full-width {
+  width: 100%;
+}
+.full-height {
+	height: 100%;
+}
+.hover-dropdown {
+	border-radius: 0;
+}
+.bg-gray {
+  background: #CCC;
+}
+.bg-yellow {
+	background: #e8b61a;
+}
+.bg-green {
+	background: #1ae82e;
+}
+.bg-dark {
+	background: #263038;
+}
+.bg-light-gray {
+	background: #eeeeee;
+}
+.list-inline-item {
+	width: 13.5%;
+	padding: 10px 0px;
+}
+.list-inline-item a {
+	text-decoration: none;
+}
+.list-inline-item:hover, .list-inline-item.active {
+	background: #ffc400;
+}
+
+.hd-sub-menu ul {
+	margin-bottom: 0px;
+	background: #FFF;
+	border: 1px solid #CCC;
+}
+
+
+/*LEFT MENU*/
+.left-menu li {
+	border-bottom: 1.5px solid #CCC;
+}
+li.first-level > a {
+	border-bottom: 1.5px solid #CCC;
+}
+
+.left-menu li:hover {
+	background: #1D809F;
+}
+.left-menu li:hover > a {
+	color: white;
+}
+.left-menu li a {
+	position: relative;
+	display: block;
+	padding: 10px 15px;
+	text-decoration: none;
+}
+
+.left-menu li a i.fa {
+	float: right;
+}
+
+.left-menu li.open {
+	background: #1D809F;
+	color: white;
+}
+.left-menu li.open > a {
+	color: white;
+}
+
+ul.second-level {
+	background: #eee;
+}
+ul.second-level li{
+	padding-left: 1.5rem;
+}
+
+
+/*Footer*/
+ul.more-info li a {
+	color: white;
+}
+.footer {
+	color: white;
+	/*position: fixed;
+	bottom: 0;
+	width: 100%;*/
+}
+.footer h4 {
+	color: #ffee08;
+}
+.footer a {
+	text-decoration: none;
+}
+
+.footer a:hover {
+	color: #f99f1b;
+}

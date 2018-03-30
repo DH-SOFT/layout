@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+  <head>
 
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -14,246 +13,202 @@
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- MetisMenu CSS -->
-    <link href="vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="dist/css/sb-admin-2.css" rel="stylesheet">
-    <link href="dist/css/custom.css" rel="stylesheet">
-
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
 
-</head>
+  </head>
 
-<body>
+  <body id="page-top">
 
-    <div id="wrapper">
+    <nav class="navbar py-0 static-top px-0 " style="background: #CCC;">
+      <div class="container-fluid px-0">
+        <div class="col-12 bg-light">
+          <div class="row">
+            <div class="col-lg-3 col-md-3"><a class="navbar-brand" href="#">9S School</a></div>
 
-        <!-- Navigation -->
-        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">9S School</a>
-            </div>
-            <!-- /.navbar-header -->
-
-            <ul class="nav navbar-top-links navbar-right">
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <i class="fa fa-graduation-cap fa-fw"></i> Phổ Thông <i class="fa fa-caret-down"></i>
-                    </a>
-                    <ul class="list-inline dropdown-menu dropdown-messages">
-                        <li><a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Thi 9S</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#"><i class="fa fa-flask" aria-hidden="true"></i> Học 12 9S</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#"><i class="fa fa-cubes" aria-hidden="true"></i> Bài giảng 9S</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#"><i class="fa fa-commenting" aria-hidden="true"></i> Hỏi 9S</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#"><i class="fa fa-plus-square" aria-hidden="true"></i> 9Plus</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#"><i class="fa fa-paper-plane" aria-hidden="true"></i> 9Go</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#"><i class="fa fa-tasks" aria-hidden="true"></i> 9Book</a></li>
-                    </ul>
-                </li>
-                <!-- /.dropdown -->
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <i class="fa fa-university fa-fw"></i> Đại Học <i class="fa fa-caret-down"></i>
-                    </a>
-                    <ul class="dropdown-menu dropdown-messages">
-                        <li><a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Thi 9S</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#"><i class="fa fa-flask" aria-hidden="true"></i> Học 12 9S</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#"><i class="fa fa-cubes" aria-hidden="true"></i> Bài giảng 9S</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#"><i class="fa fa-commenting" aria-hidden="true"></i> Hỏi 9S</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#"><i class="fa fa-plus-square" aria-hidden="true"></i> 9Plus</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#"><i class="fa fa-paper-plane" aria-hidden="true"></i> 9Go</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#"><i class="fa fa-tasks" aria-hidden="true"></i> 9Book</a></li>
-                    </ul>
-                </li>
-                <!-- /.dropdown -->
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <i class="fa fa-bell fa-fw"></i> Thông báo <i class="fa fa-caret-down"></i>
-                    </a>
-                    <ul class="dropdown-menu dropdown-alerts">
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <i class="fa fa-comment fa-fw"></i> Thông báo 1
-                                    <span class="pull-right text-muted small">4 phút trước</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <i class="fa fa-twitter fa-fw"></i> Thông báo 2
-                                    <span class="pull-right text-muted small">12 phút trước</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <i class="fa fa-envelope fa-fw"></i> Thông báo 3
-                                    <span class="pull-right text-muted small">4 phút trước</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <i class="fa fa-tasks fa-fw"></i> Thông báo 4
-                                    <span class="pull-right text-muted small">4 phút trước</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <i class="fa fa-upload fa-fw"></i> Thông báo 5
-                                    <span class="pull-right text-muted small">4 phút trước</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a class="text-center" href="#">
-                                <strong>Xem tất cả thông báo</strong>
-                                <i class="fa fa-angle-right"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <i class="fa fa-user fa-fw"></i> Tài khoản <i class="fa fa-caret-down"></i>
-                    </a>
-                    <ul class="dropdown-menu dropdown-user">
-                        <li><a href="#"><i class="fa fa-user fa-fw"></i> Đăng nhập</a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-edit fa-fw"></i> Đăng ký</a>
-                        </li>
-                        <li class="divider"></li>
-                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Đăng xuất</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-
-            <div class="navbar-default sidebar" role="navigation">
-                <div class="sidebar-nav navbar-collapse">
-                    <ul class="nav" id="side-menu">
-                        <li>
-                            <a href="#"><i class="fa fa-play-circle-o fa-fw"></i> Video<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="#">Giới thiệu</a>
-                                </li>
-                                <li>
-                                    <a href="#">Tính năng</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
+            <div class="col-lg-6 col-md-6 bg-green">
+              <div class="row full-height">
+                <div class="col-lg-3 col-md-3 bg-yellow px-0">
+                  <button class="btn btn-primary hover-dropdown full-width full-height" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1" onhower="showHideSubMenu();"><i class="fa fa-graduation-cap fa-fw"></i> Phổ Thông</button>
                 </div>
-            </div>
-        </nav>
-
-        <!-- Page Content -->
-        <div id="page-wrapper">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h1 class="page-header">Thông tin nổi bật</h1>
-                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                          <!-- Indicators -->
-                          <ol class="carousel-indicators">
-                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                          </ol>
-
-                          <!-- Wrapper for slides -->
-                          <div class="carousel-inner" role="listbox">
-                            <div class="item active">
-                              <div class="row">
-                                <div class="col-lg-4 col-md-4"><img class="img-responsive full-width" src="img/bg-showcase-1.jpg" alt="First slide"></div>
-                                <div class="col-lg-4 col-md-4"><img class="img-responsive full-width" src="img/bg-showcase-2.jpg" alt="First slide"></div>
-                                <div class="col-lg-4 col-md-4"><img class="img-responsive full-width" src="img/bg-showcase-2.jpg" alt="First slide"></div>
-                              </div>
-                            </div>
-                            <div class="item">
-                              <div class="row">
-                                <div class="col-lg-4 col-md-4"><img class="img-responsive full-width" src="img/bg-showcase-1.jpg" alt="First slide"></div>
-                                <div class="col-lg-4 col-md-4"><img class="img-responsive full-width" src="img/bg-showcase-2.jpg" alt="First slide"></div>
-                                <div class="col-lg-4 col-md-4"><img class="img-responsive full-width" src="img/bg-showcase-2.jpg" alt="First slide"></div>
-                              </div>
-                            </div>
-                            <div class="item">
-                              <div class="row">
-                                <div class="col-lg-4 col-md-4"><img class="img-responsive full-width" src="img/bg-showcase-1.jpg" alt="First slide"></div>
-                                <div class="col-lg-4 col-md-4"><img class="img-responsive full-width" src="img/bg-showcase-2.jpg" alt="First slide"></div>
-                                <div class="col-lg-4 col-md-4"><img class="img-responsive full-width" src="img/bg-showcase-2.jpg" alt="First slide"></div>
-                              </div>
-                            </div>
-                          </div>
-
-                          <!-- Controls -->
-                          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                          </a>
-                          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                          </a>
-                        </div>
-                    </div>
+                <div class="col-lg-6 col-md-6 text-center">Tự học<br/>Cảnh giới cao nhất của việc học</div>
+                <div class="col-lg-3 col-md-3 bg-yellow px-0">
+                <button class="btn btn-primary hover-dropdown full-width full-height" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2" onhower="showHideSubMenu();"><i class="fa fa-university fa-fw"></i> Đại Học</button>
                 </div>
+              </div>
             </div>
+            
+            <div class="col-lg-3 col-md-3 pt-1">
+              <div class="row col-12">
+                <div class="col-6"><a class="btn btn-primary " href="#"><i class="fa fa-edit fa-fw"></i> Đăng ký</a></div>
+                <div class="col-6"><a class="btn btn-info" href="#"><i class="fa fa-user fa-fw"></i> Đăng nhập</a></div>
+              </div>
+              <div class="row col-12">
+                <strong class="text-center text-danger full-width">Hotline: 016.64.135.468</strong>
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="col-12 bg-green">
+          <div class="row">
+            <div class="col-12 px-0 bg-gray">
+              <div class="collapse multi-collapse hd-sub-menu" id="multiCollapseExample1">
+                  <ul class="list-inline text-center">
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Thi 9S</a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-flask" aria-hidden="true"></i> Học 12 9S</a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-cubes" aria-hidden="true"></i> Bài giảng 9S</a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-commenting" aria-hidden="true"></i> Hỏi 9S</a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-plus-square" aria-hidden="true"></i> 9Plus</a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-paper-plane" aria-hidden="true"></i> 9Go</a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-tasks" aria-hidden="true"></i> 9Book</a></li>
+                  </ul>
+              </div>
 
-    </div>
-    <!-- /#wrapper -->
+              <div class="collapse multi-collapse hd-sub-menu" id="multiCollapseExample2">
+                  <ul class="list-inline text-center">
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Thi 9S</a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-flask" aria-hidden="true"></i> Học 12 9S</a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-cubes" aria-hidden="true"></i> Bài giảng 9S</a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-commenting" aria-hidden="true"></i> Hỏi 9S</a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-plus-square" aria-hidden="true"></i> 9Plus</a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-paper-plane" aria-hidden="true"></i> 9Go</a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-tasks" aria-hidden="true"></i> 9Book</a></li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </nav>
 
-    <footer class="footer">
+    <!-- Navigation -->
+    <a class="menu-toggle rounded text-warning" href="#">
+      <i class="fa fa-bell-o"></i>
+    </a>
+    <nav id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <li class="sidebar-brand">
+          <a class="js-scroll-trigger text-warning" href="#"><i class="fa fa-bell-o" aria-hidden="true"></i> Thông báo</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#"><i class="fa fa-comment fa-fw"></i> Thông báo 1</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#"><i class="fa fa-comment fa-fw"></i> Thông báo 2</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#"><i class="fa fa-comment fa-fw"></i> Thông báo 3</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#"><i class="fa fa-comment fa-fw"></i> Thông báo 4</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#"><i class="fa fa-comment fa-fw"></i> Thông báo 5</a>
+        </li>
+      </ul>
+    </nav>
+
+
+    <section class="content-section left-menu">
       <div class="container-fluid">
-        <div class="row bg-green">
+        <div class="row">
+          <div class="col-lg-3 px-0 bg-light-gray">
+                <ul class="list-unstyled mb-0">
+                    <li class="first-level open">
+                        <a class="" href="#">Video <i class="fa fa-angle-left" aria-hidden="true"></i></a>
+                        <ul class="list-unstyled second-level" style="display: block;">
+                            <li>
+                                <a href="#">Giới thiệu</a>
+                            </li>
+                            <li>
+                                <a href="#">Tính năng</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="first-level">
+                        <a class="" href="#">Video <i class="fa fa-angle-left" aria-hidden="true"></i></a>
+                        <ul class="list-unstyled second-level" style="display: none;">
+                            <li>
+                                <a href="#">Giới thiệu</a>
+                            </li>
+                            <li>
+                                <a href="#">Tính năng</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="first-level">
+                        <a class="" href="#">Video <i class="fa fa-angle-left" aria-hidden="true"></i></a>
+                        <ul class="list-unstyled second-level" style="display: none;">
+                            <li>
+                                <a href="#">Giới thiệu</a>
+                            </li>
+                            <li>
+                                <a href="#">Tính năng</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+          </div>
+          <div class="col-lg-9">
+            <h2>Thông tin nổi bật</h2>
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-4"><img class="d-block w-100" src="img/bg-showcase-1.jpg" alt="First slide"></div>
+                    <div class="col-4"><img class="d-block w-100" src="img/bg-showcase-2.jpg" alt="First slide"></div>
+                    <div class="col-4"><img class="d-block w-100" src="img/bg-showcase-1.jpg" alt="First slide"></div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-4"><img class="d-block w-100" src="img/bg-showcase-1.jpg" alt="First slide"></div>
+                    <div class="col-4"><img class="d-block w-100" src="img/bg-showcase-2.jpg" alt="First slide"></div>
+                    <div class="col-4"><img class="d-block w-100" src="img/bg-showcase-1.jpg" alt="First slide"></div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-4"><img class="d-block w-100" src="img/bg-showcase-1.jpg" alt="First slide"></div>
+                    <div class="col-4"><img class="d-block w-100" src="img/bg-showcase-2.jpg" alt="First slide"></div>
+                    <div class="col-4"><img class="d-block w-100" src="img/bg-showcase-2.jpg" alt="First slide"></div>
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container-fluid bg-dark">
+        <div class="row bg-primary pt-2">
           <div class="col-lg-4 col-md-4 col-sm-12">
             <h4>Liên hệ:</h4>
             <ul class="list-unstyled">
-              <li class="list-inline-item">Công ty TNHH Việt Nam Mi</li>
-              <li class="list-inline-item">MST: 031.481.86.07</li>
-              <li class="list-inline-item">ĐC: 125 Kha Vạn Cân, KP1, Hiệp Bình Chánh, Thủ Đức, TP.HCM</li>
-              <li class="list-inline-item">SĐT: 028.627.164.09</li>
-              <li class="list-inline-item">Email: tranhuuluong0608@gmail.com</li>
+              <li>Công ty TNHH Việt Nam Mi</li>
+              <li>MST: 031.481.86.07</li>
+              <li>ĐC: 125 Kha Vạn Cân, KP1, Hiệp Bình Chánh, Thủ Đức, TP.HCM</li>
+              <li>SĐT: 028.627.164.09</li>
+              <li>Email: tranhuuluong0608@gmail.com</li>
             </ul>
           </div>
           <div class="col-lg-4 col-md-4 col-sm-12">
@@ -263,35 +218,39 @@
           <div class="col-lg-4 col-md-4 col-sm-12">
             <h4>Tham khảo thêm</h4>
             <ul class="list-unstyled more-info">
-              <li class="list-inline-item">
+              <li>
                 <a href="#">Tuyển dụng</a>
               </li>
-              <li class="list-inline-item">
+              <li>
                 <a href="#">Hướng dẫn Nạp thẻ (HV)</a>
               </li>
-              <li class="list-inline-item">
+              <li>
                 <a href="#">Hướng dẫn Gửi bài (GV)</a>
               </li>
             </ul>
           </div>
             
         </div>
-        <p class="text-muted small full-width text-center mt-10">&copy; www.9school.vn 2018. All Rights Reserved.</p>
+        <p class="text-muted small full-width text-center py-2 mb-0">&copy; www.9school.vn 2018. All Rights Reserved.</p>
       </div>
     </footer>
 
-    <!-- jQuery -->
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+      <i class="fa fa-angle-up"></i>
+    </a>
+
+    <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Metis Menu Plugin JavaScript -->
-    <script src="vendor/metisMenu/metisMenu.min.js"></script>
+    <!-- Custom scripts for this template -->
+    <script src="js/stylish-portfolio.js"></script>
+    <script src="js/main.js"></script>
 
-    <!-- Custom Theme JavaScript -->
-    <script src="dist/js/sb-admin-2.js"></script>
-
-</body>
+  </body>
 
 </html>

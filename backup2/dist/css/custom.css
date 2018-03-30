@@ -34,3 +34,7 @@
 .bg-green {
 	background-color: #008fe5;
 }
+
+.hd-sub-menu {
+	min-width: 800px;
+}
