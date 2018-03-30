@@ -1,3 +1,6 @@
+.img-logo {
+	max-height: 70px;
+}
 .full-width {
   width: 100%;
 }
@@ -23,7 +26,7 @@
 	background: #eeeeee;
 }
 .list-inline-item {
-	width: 13.5%;
+	min-width: 13.5%;
 	padding: 10px 0px;
 }
 .list-inline-item a {
@@ -100,4 +103,22 @@ ul.more-info li a {
 
 .footer a:hover {
 	color: #f99f1b;
+}
+
+.main-menu button.active {
+	background: #ffc400 !important;
+    border-color: #ffc400 !important;
+}
+
+
+@media (min-width: 576px) {
+  .col-hidden {
+    display: none;
+  }
+}
+
+@media (max-width: 960px) {
+  .img-slogan {
+    margin-top: 10px; 
+  }
 }
