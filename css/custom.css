@@ -10,17 +10,29 @@
 .full-height {
 	height: 100%;
 }
-.hover-dropdown {
+.hover-dropdown, .account a.btn {
 	border-radius: 0;
 }
+.btn-pt:hover {
+	background-color: #ffc107 !important;
+}
+.btn-dh:hover {
+	background-color: #fd7e14 !important;
+}
 .bg-gray {
-  background: #CCC;
+  background: #999c9f!important;
 }
 .bg-yellow {
-	background: #e8b61a;
+	background-color: #ffc107 !important;
 }
 .bg-green {
 	background: #1ae82e;
+}
+.bg-orange {
+	background-color: #fd7e14 !important;
+}
+.bg-violet {
+	background-color: #bd2cab;
 }
 .bg-dark {
 	background: #263038;
@@ -29,19 +41,20 @@
 	background: #eeeeee;
 }
 .list-inline-item {
-	min-width: 13.5%;
-	padding: 10px 0px;
+	padding: 10px;
 }
 .list-inline-item a {
 	text-decoration: none;
 }
 .list-inline-item:hover, .list-inline-item.active {
-	background: #ffc400;
+	background-color: #008ff3 !important;
+}
+.list-inline-item:hover a, .list-inline-item.active a {
+	color: #FFF;
 }
 
 .hd-sub-menu ul {
 	margin-bottom: 0px;
-	background: #FFF;
 	border: 1px solid #CCC;
 }
 
@@ -67,8 +80,24 @@ li.first-level > a {
 	text-decoration: none;
 }
 
-.left-menu li a i.fa {
+.left-menu li a i.fa.last {
 	float: right;
+}
+.hd-sidebar .btn-close {
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	color: #fff;
+	background: rgba(52, 58, 64, 0.5);
+	line-height: 50px;
+	z-index: 999;
+	float: right;
+}
+.btn-close:hover {
+	background: #343a40 !important;
+}
+.btn-noboder {
+	border: 0px;
 }
 
 .left-menu li.open {
@@ -98,7 +127,7 @@ ul.more-info li a {
 	width: 100%;*/
 }
 .footer h5 {
-	color: #ffb300;
+	color: #bf150b;
 }
 .footer a {
 	text-decoration: none;
@@ -107,11 +136,53 @@ ul.more-info li a {
 .footer a:hover {
 	color: #f99f1b;
 }
+.footer .container {
+	border-top: 2px solid #cba825;
+}
 
 .main-menu button.active {
 	background: #ffc400 !important;
     border-color: #ffc400 !important;
 }
+
+/*Left side bar nav*/
+/*.left-side-nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+
+
+	z-index: 2;
+	height: 100%;
+	background: #1D809F;
+	border-left: 1px solid rgba(255, 255, 255, 0.1);
+}*/
+/*.left-side-nav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.left-side-nav a:hover {
+    color: #f1f1f1;
+}
+
+.left-side-nav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}*/
 
 
 @media (min-width: 576px) {

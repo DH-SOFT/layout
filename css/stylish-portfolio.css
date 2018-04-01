@@ -15,7 +15,6 @@ body {
 .content-section {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  min-height: 600px;
 }
 
 .content-section-heading h2 {
@@ -110,20 +109,62 @@ h6 {
 }
 
 /* Side Menu */
-#sidebar-wrapper {
+.hd-sidebar {
   position: fixed;
   z-index: 2;
-  right: 0;
   width: 250px;
   height: 100%;
+  background: #1D809F;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.right-side-bar {
+  right: 0;
   -webkit-transition: all 0.4s ease 0s;
   -moz-transition: all 0.4s ease 0s;
   -ms-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
   transform: translateX(250px);
-  background: #1D809F;
-  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.right-side-bar.active {
+  right: 250px;
+  width: 250px;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+.left-side-bar {
+  left: 0;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+  transform: translateX(-250px);
+}
+
+.right-side-bar.active {
+  right: 250px;
+  width: 250px;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+.left-side-bar.active {
+  right: 250px;
+  width: 250px;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+  transform: translateX(0px);
 }
 
 .sidebar-nav {
@@ -172,19 +213,8 @@ h6 {
   background: none;
 }
 
-#sidebar-wrapper.active {
-  right: 250px;
-  width: 250px;
-  -webkit-transition: all 0.4s ease 0s;
-  -moz-transition: all 0.4s ease 0s;
-  -ms-transition: all 0.4s ease 0s;
-  -o-transition: all 0.4s ease 0s;
-  transition: all 0.4s ease 0s;
-}
-
 .menu-toggle {
   position: fixed;
-  right: 15px;
   top: 82px;
   width: 50px;
   height: 50px;
@@ -193,6 +223,13 @@ h6 {
   background: rgba(52, 58, 64, 0.5);
   line-height: 50px;
   z-index: 999;
+}
+.menu-toggle.right {
+  right: 0;
+}
+
+.menu-toggle.left {
+  left: 0;
 }
 
 .menu-toggle:focus, .menu-toggle:hover {
@@ -298,7 +335,6 @@ h6 {
 footer.footer {
   padding-top: 0rem;
   padding-bottom: 0rem;
-  border-top: 2px solid #cba825;
 }
 
 footer.footer .social-link {

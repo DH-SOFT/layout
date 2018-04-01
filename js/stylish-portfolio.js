@@ -4,9 +4,10 @@
   // Closes the sidebar menu
   $(".menu-toggle").click(function(e) {
     e.preventDefault();
-    $("#sidebar-wrapper").toggleClass("active");
-    $(".menu-toggle > .fa-bell-o, .menu-toggle > .fa-times").toggleClass("fa-bell-o fa-times");
-    $(this).toggleClass("active");
+    var navId = $(this).attr('data-navId');
+    $("#" + navId).toggleClass("active");
+    // $(".menu-toggle > .fa-bell-o, .menu-toggle > .fa-times").toggleClass("fa-bell-o fa-times");
+    $(this).toggleClass("active").hide();
   });
 
   // Smooth scrolling using jQuery easing

@@ -19,3 +19,22 @@ $('li.first-level > a').click(function(e) {
     $(parent).toggleClass('open');
   }
 });
+
+$('.btn-close').click(function() {
+  var target = $(this).attr('data-close');
+  $("#" + target).removeClass("active");
+  $(".menu-toggle").removeClass("active");
+  // $(".menu-toggle > .fa-bell-o, .menu-toggle > .fa-times").toggleClass("fa-bell-o fa-times");
+  setTimeout(function(){
+    $('a[data-navId='+ target + ']').show();
+      // $('.menu-toggle').show();
+    }, 250);
+});
+
+$('.btn-pt').hover(function() {
+  $(this).toggleClass('bg-yellow', true);
+});
+
+$('.btn-dh').hover(function() {
+  $(this).toggleClass('bg-orange', true);
+});

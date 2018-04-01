@@ -2,6 +2,7 @@ $(".hover-dropdown").hover(
   function() {
     var target = $(this).attr('aria-controls');
     $('#' + target).collapse('show');
+    $('#' + target).siblings('div.hd-sub-menu').collapse('hide');
   }, function() {
     var curElement = this;
     setTimeout(function(){
@@ -9,6 +10,7 @@ $(".hover-dropdown").hover(
       var isUsing = $(curElement).attr('data-using');
       if(isUsing != 'true') {
         $('#' + target).collapse('hide');
+        $(curElement).removeClass('bg-yellow bg-orange');
       }
     }, 200);
   });
@@ -32,4 +34,5 @@ function mouseLeaveHandler(e) {
   var target = $('.hover-dropdown[aria-controls=' + id + ']');
   $(target).attr('data-using', false);
   $(e).collapse('hide');
+  $(target).removeClass('bg-yellow bg-orange');
 }
