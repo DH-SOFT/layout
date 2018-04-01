@@ -20,7 +20,7 @@
 	background-color: #fd7e14 !important;
 }
 .bg-gray {
-  background: #999c9f!important;
+  background: #b0bec5!important;
 }
 .bg-yellow {
 	background-color: #ffc107 !important;
@@ -37,11 +37,15 @@
 .bg-dark {
 	background: #263038;
 }
+.bg-black {
+	background-color: #212112;
+}
 .bg-light-gray {
 	background: #eeeeee;
 }
 .list-inline-item {
 	padding: 10px;
+	margin-right: 0px !important;
 }
 .list-inline-item a {
 	text-decoration: none;
@@ -144,45 +148,12 @@ ul.more-info li a {
 	background: #ffc400 !important;
     border-color: #ffc400 !important;
 }
-
-/*Left side bar nav*/
-/*.left-side-nav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-
-
-	z-index: 2;
-	height: 100%;
-	background: #1D809F;
-	border-left: 1px solid rgba(255, 255, 255, 0.1);
-}*/
-/*.left-side-nav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
+.border-right {
+	border-right: 1px solid #CCC;
 }
-
-.left-side-nav a:hover {
-    color: #f1f1f1;
+.border-left {
+	border-left: 1px solid #CCC;
 }
-
-.left-side-nav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}*/
 
 
 @media (min-width: 576px) {

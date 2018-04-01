@@ -12,7 +12,7 @@ $(".hover-dropdown").hover(
         $('#' + target).collapse('hide');
         $(curElement).removeClass('bg-yellow bg-orange');
       }
-    }, 200);
+    }, 50);
   });
 
 $('.hd-sub-menu')
