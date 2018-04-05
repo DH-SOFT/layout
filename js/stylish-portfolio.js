@@ -28,7 +28,7 @@
   $('#sidebar-wrapper .js-scroll-trigger').click(function() {
     $("#sidebar-wrapper").removeClass("active");
     $(".menu-toggle").removeClass("active");
-    $(".menu-toggle > .fa-bell-o, .menu-toggle > .fa-times").toggleClass("fa-bell-o fa-times");
+    //$(".menu-toggle > .fa-bell-o, .menu-toggle > .fa-times").toggleClass("fa-bell-o fa-times");
 
     var targetId = $(this).closest('nav').attr('id');
     $("#" + targetId).removeClass("active");
@@ -42,7 +42,7 @@
   $('#leftSideNav .js-scroll-trigger').click(function() {
     $("#leftSideNav").removeClass("active");
     $(".menu-toggle").removeClass("active");
-    $(".menu-toggle > .fa-bell-o, .menu-toggle > .fa-times").toggleClass("fa-bell-o fa-times");
+    //$(".menu-toggle > .fa-bell-o, .menu-toggle > .fa-times").toggleClass("fa-bell-o fa-times");
 
     var targetId = $(this).closest('nav').attr('id');
     $("#" + targetId).removeClass("active");

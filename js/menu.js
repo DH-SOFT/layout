@@ -36,3 +36,11 @@ function mouseLeaveHandler(e) {
   $(e).collapse('hide');
   $(target).removeClass('bg-yellow bg-orange');
 }
+
+$('.btn-pt').hover(function() {
+  $(this).toggleClass('bg-yellow', true);
+});
+
+$('.btn-dh').hover(function() {
+  $(this).toggleClass('bg-orange', true);
+});
