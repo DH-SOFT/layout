@@ -1,0 +1,29 @@
+Phone:
+1. Cùng 1 row Pho thong, DH, Dang Kí, Dang Nhap
+2. Bỏ menu chi tiết
+3. Bỏ dấu : footer
+4. Video  cho nhỏ lại và Alert, khi click vào alert lỗi.
+5. Cho nhỏ độ rộng lại sát lại chữ, bên video và alert.
+6. Đổi icon video -> máy quay
+7. Hotline dưới cùng như cũ
+nut nho lại xíu
+
+
+
+
+Laptop:
+1. Độ rộng video, alert = khung trắng
+2. Submenu bỏ: click vào PT/ĐH -> sang trang.
+3. Đẩy hotline lên như cũ.
+4. Phổ thông, ĐH, .. sát vào nhau. Chỉnh lại 2 bên như cũ.
+5. Trang sau sẽ cho nhỏ lại.
+6. Footer trang sau chỉnh lại: © www.9school.vn-2018. All Rights Reserved.
+7. Bỏ dấu : footer
+8. Thêm iframe, đặt ở ngay nội dung chính, đưa đại 1 page dzoo
+
+
+
+Header color: blue
+Footer color: blue
+
+

@@ -105,27 +105,27 @@ li.first-level > a {
 }
 .btn-login {
 	border: 0px;
+	box-shadow: none;
 	border-left: 0.5px;
+	border-bottom: 1px solid #CCC;
 	width: 100%;
 	height: 100%;
-	padding-top: 20px;
-	font-weight: 400;
+	padding-top: 10px;
+	font-weight: 600 !important;
 }
 .btn-register {
 	border: 0px;
+	box-shadow: none;
 	border-right: 0.5px;
+	border-bottom: 1px solid #CCC;
 	width: 100%;
 	height: 100%;
-	padding-top: 20px;
-	font-weight: 400;
+	padding-top: 10px;
+	font-weight: 600 !important;
 }
-.btn-pt {
-	border: 0px;
-	border-right: 1px solid #CCC;
-}
-.btn-dh {
-	border: 0px;
-	border-left: 1px solid #CCC;
+.btn-link {
+	cursor: pointer;
+	text-decoration: none;
 }
 
 .left-menu li.open {
@@ -179,6 +179,12 @@ ul.more-info li a {
 	border-left: 1px solid #CCC;
 }
 
+.w-80 {
+	width: 80% !important;
+}
+.w-10 {
+	width: 10% !important;
+}
 
 @media (min-width: 576px) {
   .col-hidden {

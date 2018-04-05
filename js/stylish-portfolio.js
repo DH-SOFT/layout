@@ -29,6 +29,27 @@
     $("#sidebar-wrapper").removeClass("active");
     $(".menu-toggle").removeClass("active");
     $(".menu-toggle > .fa-bell-o, .menu-toggle > .fa-times").toggleClass("fa-bell-o fa-times");
+
+    var targetId = $(this).closest('nav').attr('id');
+    $("#" + targetId).removeClass("active");
+    $(".menu-toggle").removeClass("active");
+    setTimeout(function(){
+      $('a[data-navId='+ targetId + ']').show();
+      }, 150);
+  });
+
+  // Close responsive menu on the left
+  $('#leftSideNav .js-scroll-trigger').click(function() {
+    $("#leftSideNav").removeClass("active");
+    $(".menu-toggle").removeClass("active");
+    $(".menu-toggle > .fa-bell-o, .menu-toggle > .fa-times").toggleClass("fa-bell-o fa-times");
+
+    var targetId = $(this).closest('nav').attr('id');
+    $("#" + targetId).removeClass("active");
+    $(".menu-toggle").removeClass("active");
+    setTimeout(function(){
+      $('a[data-navId='+ targetId + ']').show();
+      }, 150);
   });
 
   // Scroll to top button appear

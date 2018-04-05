@@ -26,37 +26,41 @@
 
   <body id="page-top">
     <nav class="navbar py-0 static-top px-0">
-      <div class="container px-0">
+      <div class="container-fluid px-0 w-80">
         <div class="col-12">
-          <div class="row bg-black">
+          <div class="row bg-primary">
             <div class="col-lg-3 col-md-3">
-              <a class="navbar-brand py-0 full-width" href="index.html">
-                <img class="img-fluid img-logo full-width" src="img/logo.png">
+              <a class="navbar-brand py-0 full-width text-center" href="index.html">
+                <img class="img-fluid img-logo" src="img/logo.png">
               </a>
             </div>
 
             <div class="col-lg-6 col-md-6">
               <div class="row full-height">
                 <div class="col-lg-3 col-md-3 col-6 px-0">
-                  <button class="btn bg-violet text-white hover-dropdown btn-pt full-width full-height btn-noboder bg-yellow" data-toggle="collapse" href="#subMenuPT" role="button" aria-expanded="false" aria-controls="subMenuPT" onhower="showHideSubMenu();" onclick="goToPage('pho-thong.html');"><i class="fa fa-graduation-cap fa-fw"></i> Phổ Thông</button>
-                </div>
-                <div class="col-lg-3 col-md-3 col-6 px-0">
-                  <button class="btn bg-violet text-white hover-dropdown btn-dh full-width full-height btn-noboder" type="button" data-toggle="collapse" data-target="#subMenuDH" aria-expanded="false" aria-controls="subMenuDH" onhower="showHideSubMenu();" onclick="goToPage('dai-hoc.html');"><i class="fa fa-university fa-fw"></i> Đại Học</button>
+                  <button class="btn bg-violet text-white hover-dropdown btn-pt full-width full-height btn-noboder" data-toggle="collapse" href="#subMenuPT" role="button" aria-expanded="false" aria-controls="subMenuPT" onhower="showHideSubMenu();" onclick="goToPage('pho-thong.html');"><i class="fa fa-graduation-cap fa-fw"></i> Phổ Thông</button>
                 </div>
                 <div class="col-lg-6 col-md-6 px-0 d-none d-sm-none d-md-block text-center">
                   <img class="img-fluid img-slogan" src="img/slogan.png">
                 </div>
+                <div class="col-lg-3 col-md-3 col-6 px-0">
+                  <button class="btn bg-violet text-white hover-dropdown btn-dh full-width full-height btn-noboder" type="button" data-toggle="collapse" data-target="#subMenuDH" aria-expanded="false" aria-controls="subMenuDH" onhower="showHideSubMenu();" onclick="goToPage('dai-hoc.html');"><i class="fa fa-university fa-fw"></i> Đại Học</button>
+                </div>
               </div>
             </div>
-              
+            
             <div class="col-lg-3 col-md-3 account">
               <div class="row">
-                <div class="col-6 text-center px-0 border-right"><a class="btn btn-outline-danger btn-noboder font-weight-bold full-width" href="#"><i class="fa fa-edit fa-fw"></i> Đăng ký</a></div>
-                <div class="col-6 text-center px-0 border-left"><a class="btn btn-outline-warning btn-noboder font-weight-bold full-width" href="#"><i class="fa fa-user fa-fw"></i> Đăng nhập</a></div>
+                <div class="col-6 text-center px-0 border-right"><a class="btn btn-outline-danger btn-register" href="#"><i class="fa fa-edit fa-fw"></i> Đăng ký</a></div>
+                <div class="col-6 text-center px-0 border-left"><a class="btn btn-outline-warning btn-login" href="#"><i class="fa fa-user fa-fw"></i> Đăng nhập</a></div>
+              </div>
+              <div class="row col-12">
+                <h5 class="text-center text-danger full-width mb-0 pt-1"><i class="fa fa-phone" aria-hidden="true"></i> 016.64.135.468</h5>
               </div>
             </div>
           </div>
         </div>
+
         <div class="col-12">
           <div class="row">
             <div class="col-12 px-0">
@@ -79,32 +83,62 @@
 
     <!-- Left side nav -->
     <a class="menu-toggle left rounded text-warning" data-navId="leftSideNav" href="#">
-      <i class="fa fa fa-tags" aria-hidden="true"></i>
+      <i class="fa fa-youtube-play" aria-hidden="true"></i>
     </a>
-    <nav id="leftSideNav" class="hd-sidebar left-side-bar">
+    <nav id="leftSideNav" class="hd-sidebar left-side-bar w-10">
       <ul class="sidebar-nav">
         <li class="sidebar-brand">
-          <a class="js-scroll-trigger text-warning" href="#">
-            <i class="fa fa-tags" aria-hidden="true"></i> Ghi nhớ 
-          </a>
-          <a class="rounded text-warning btn-close mr-2" data-close="leftSideNav">
-            <i class="fa fa-times"></i>
+          <a class="js-scroll-trigger text-warning btn-link">
+            <i class="fa fa-times" aria-hidden="true"></i> Ẩn 
           </a>
         </li>
         <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#"><i class="fa fa fa-tags fa-fw"></i> Ghi nhớ</a>
+          <a class="js-scroll-trigger" href="#"><i class="fa fa-play-circle fa-fw"></i> Giới thiệu</a>
         </li>
         <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#"><i class="fa fa fa-tags fa-fw"></i> Robot</a>
+          <a class="js-scroll-trigger" href="#"><i class="fa fa-play-circle fa-fw"></i> Tính năng</a>
         </li>
         </ul>
     </nav>
 
     <section class="content-section left-menu">
-      <div class="container px-0">
+      <div class="container-fluid w-80 px-0">
         <div class="row">
           <div class="col-lg-12">
-            <h2>Nội dung chính</h2>
+            <h2>Thông tin nổi bật</h2>
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-4 px-0"><img class="d-block w-100" src="img/bg-showcase-1.jpg" alt="First slide"></div>
+                    <div class="col-4 px-0"><img class="d-block w-100" src="img/bg-showcase-2.jpg" alt="First slide"></div>
+                    <div class="col-4 px-0"><img class="d-block w-100" src="img/bg-showcase-1.jpg" alt="First slide"></div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-4 px-0"><img class="d-block w-100" src="img/bg-showcase-1.jpg" alt="First slide"></div>
+                    <div class="col-4 px-0"><img class="d-block w-100" src="img/bg-showcase-2.jpg" alt="First slide"></div>
+                    <div class="col-4 px-0"><img class="d-block w-100" src="img/bg-showcase-1.jpg" alt="First slide"></div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-4 px-0"><img class="d-block w-100" src="img/bg-showcase-1.jpg" alt="First slide"></div>
+                    <div class="col-4 px-0"><img class="d-block w-100" src="img/bg-showcase-2.jpg" alt="First slide"></div>
+                    <div class="col-4 px-0"><img class="d-block w-100" src="img/bg-showcase-2.jpg" alt="First slide"></div>
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -112,7 +146,7 @@
 
     <!-- Footer -->
     <footer class="footer">
-      <div class="container bg-dark">
+      <div class="container-fluid w-80 bg-dark">
         <div class="row bg-primary pt-2">
           <div class="col-lg-4 col-md-4 col-sm-12">
             <h5>Hướng dẫn</h5>
@@ -132,7 +166,7 @@
             </ul>
           </div>
           <div class="col-lg-4 col-md-4 col-sm-12">
-            <h5>Liên hệ:</h5>
+            <h5>Liên hệ</h5>
             <ul class="list-unstyled">
               <li>Công ty TNHH Việt Nam Mi</li>
               <li>MST: 031.481.86.07</li>
@@ -142,13 +176,13 @@
             </ul>
           </div>
           <div class="col-lg-4 col-md-4 col-sm-12">
-            <h5>Đường đi:</h5>
+            <h5>Đường đi</h5>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.4854300334264!2d106.75270631513398!3d10.850635260785813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527bd91a077e9%3A0x44b94eb319ce0de3!2zMTI1IMSQxrDhu51uZyBLaGEgVuG6oW4gQ8OibiwgVHLGsOG7nW5nIFRo4buNLCBUaOG7pyDEkOG7qWMsIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1522297265781" width="100%" height="100px" frameborder="0" style="border:0" allowfullscreen></iframe>
             <img class="img-fluid img-moit" src="img/dathongbao.png">
           </div>
             
         </div>
-        <p class="text-muted small full-width text-center py-2 mb-0">&copy; www.9school.vn 2018. All Rights Reserved.</p>
+        <p class="text-muted small full-width text-center py-2 mb-0">&copy; www.9school.vn-2018. All Rights Reserved.</p>
       </div>
     </footer>
 
@@ -167,5 +201,6 @@
     <!-- Custom scripts for this template -->
     <script src="js/stylish-portfolio.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/home.js"></script>
   </body>
 </html>
