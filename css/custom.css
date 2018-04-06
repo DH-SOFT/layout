@@ -212,4 +212,11 @@ ul.more-info li a {
 	.hide-sm {
 		display: none;
 	}
+	.main-menu a, .main-menu button {
+		font-size: 0.8em !important;
+		border-bottom: 0px !important;
+	}
+	.menu-toggle {
+		top: 110px;
+	}
 }
