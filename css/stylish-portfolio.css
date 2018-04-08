@@ -233,6 +233,9 @@ h6 {
 .menu-toggle.left {
   left: 0;
 }
+.menu-toggle.left.second {
+  top: 135px;
+}
 
 .menu-toggle:focus, .menu-toggle:hover {
   color: #fff;

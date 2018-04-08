@@ -7,7 +7,11 @@
     var navId = $(this).attr('data-navId');
     $("#" + navId).toggleClass("active");
     // $(".menu-toggle > .fa-bell-o, .menu-toggle > .fa-times").toggleClass("fa-bell-o fa-times");
-    $(this).toggleClass("active").hide();
+    if($(this).hasClass('left')) {
+      $('.menu-toggle.left').toggleClass('active').hide();
+    } else {
+      $(this).toggleClass("active").hide();
+    }
   });
 
   // Smooth scrolling using jQuery easing
@@ -39,7 +43,7 @@
   });
 
   // Close responsive menu on the left
-  $('#leftSideNav .js-scroll-trigger').click(function() {
+  $('.js-scroll-trigger.left').click(function() {
     $("#leftSideNav").removeClass("active");
     $(".menu-toggle").removeClass("active");
     //$(".menu-toggle > .fa-bell-o, .menu-toggle > .fa-times").toggleClass("fa-bell-o fa-times");
@@ -47,9 +51,14 @@
     var targetId = $(this).closest('nav').attr('id');
     $("#" + targetId).removeClass("active");
     $(".menu-toggle").removeClass("active");
+    var curElement = this;
     setTimeout(function(){
-      $('a[data-navId='+ targetId + ']').show();
-      }, 150);
+      if($(curElement).hasClass('left')) {
+        $('.menu-toggle.left').show();
+      } else {
+        $('a[data-navId='+ targetId + ']').show();
+      }
+    }, 150);
   });
 
   // Scroll to top button appear
