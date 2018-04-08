@@ -13,6 +13,9 @@
 .hover-dropdown, .account a.btn {
 	border-radius: 0;
 }
+.btn-pt, .btn-dh {
+	border-radius: 50%;
+}
 .btn-pt:hover {
 	background-color: #ffc107 !important;
 }
@@ -105,10 +108,11 @@ li.first-level > a {
 }
 .btn-login {
 	border: 0px;
-	border-top: 0.5px solid #CCC;
-	border-left: 0.5px;
+	//border-top: 0.5px solid #CCC;
+	//border-left: 0.5px;
 	box-shadow: none;
-	border-bottom: 1px solid #CCC;
+	//border-bottom: 1px solid #CCC;
+	border-radius: 50%;
 	width: 100%;
 	height: 100%;
 	padding-top: 10px;
@@ -116,10 +120,11 @@ li.first-level > a {
 }
 .btn-register {
 	border: 0px;
-	border-top: 0.5px solid #CCC;
-	border-right: 0.5px;
+	//border-top: 0.5px solid #CCC;
+	//border-right: 0.5px;
 	box-shadow: none;
-	border-bottom: 1px solid #CCC;
+	//border-bottom: 1px solid #CCC;
+	border-radius: 50%;
 	width: 100%;
 	height: 100%;
 	padding-top: 10px;
@@ -147,6 +152,7 @@ ul.second-level li{
 
 .content-section iframe {
 	min-height: 300px;
+	min-height: 329px;
 }
 
 /*Footer*/
@@ -218,5 +224,8 @@ ul.more-info li a {
 	}
 	.menu-toggle {
 		top: 110px;
+	}
+	.content-section {
+		min-height: 0px;
 	}
 }
